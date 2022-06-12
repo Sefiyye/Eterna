@@ -1,4 +1,4 @@
-﻿@model HomeVM
+﻿@model ServiceVM
 @{
     ViewData["Title"] = "Index";
 }
@@ -9,17 +9,18 @@
                     <div class="row">
                         @foreach (Card card in Model.Cards)
                        {
-                            <div class="card col-lg-4 d-flex align-items-stretch">
+                            <div class="card col-lg-4 col-md-6 col-sm-12 d-flex align-items-stretch">
                             <div class="icons">
-                                <i class="fa-solid fa-archway"></i>
+                                <i class="@card.Icon"></i>
                             </div>
                             <div class="title">
-                                <h2><a href="#">Divera don</a></h2>
+                                <h2><a href="#">@card.Title</a></h2>
                             </div>
                             <div class="description">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, ad.</p>
+                                <p>@card.Subtitle</p>
                             </div>
-                        </div>                       }
+                        </div> 
+                        }
                     </div>
                 </div>
             </div>
@@ -28,26 +29,25 @@
             <div class="container">
                 <div class="row">
                   <div class="title text-center">
-                      <h2>Our Skills</h2>
+                      <h2>@Model.Statistics.Title</h2>
                       <div class="box"></div>
                   </div>
                   <div class="description text-center">
-                      <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+                      <p>@Model.Statistics.Subtitle</p>
                   </div>
                  
                 </div>
               <div class="info">
                   <div class="row">               
-                      <div class="img col-lg-6">
-                          <img src="./images/skills.jpg" alt="">
+                      <div class="img col-lg-6 col-md-12 col-sm-12">
+                          <img src="@Model.Statistics.Image" alt="">
                       </div>
                       <div class="skill col-lg-6">
                           <div class="title">
-                              <h2>
-                                  Voluptatem dignissimos provident quasi corporis voluptates</h2>
+                              <h2>@Model.Statistics.DiagramTitle</h2>
                           </div>
                           <div class="information">
-                              <p> <i>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt direna past reda</i> </p>
+                              <p> <i>@Model.Statistics.DiagramSubtitle</i> </p>
                           </div>
                           
                           <div class="values d-flex justify-content-between">
@@ -55,7 +55,7 @@
                               <span><b>100%</b></span>
                               </div>
                             <div class="progress">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">@layoutService.GetDatas().Result.FirstOrDefault(p=>p.Key.ToLower().Trim() == "html").Value%</div>
                               </div>
                           
                             <div class="values d-flex justify-content-between">
@@ -63,7 +63,7 @@
                             <span><b>55%</b></span>
                         </div>
                           <div class="progress">
-                              <div class="progress-bar bg-danger" role="progressbar" style="width: 55%" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+                              <div class="progress-bar bg-danger" role="progressbar" style="width: 55%" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">@layoutService.GetDatas().Result.FirstOrDefault(p=>p.Key.ToLower().Trim() == "css").Value%</div>
                             </div>
                       
                             <div class="values d-flex justify-content-between">
@@ -71,7 +71,7 @@
                             <span><b>90%</b></span>
                         </div>
                           <div class="progress">
-                              <div class="progress-bar bg-danger" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                              <div class="progress-bar bg-danger" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">@layoutService.GetDatas().Result.FirstOrDefault(p=>p.Key.ToLower().Trim() == "javascript").Value%</div>
                             </div>
                         
                         <div class="values d-flex justify-content-between">
@@ -79,7 +79,7 @@
                             <span><b>55%</b></span>
                         </div>
                           <div class="progress">
-                              <div class="progress-bar bg-danger" role="progressbar" style="width: 55%" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+                              <div class="progress-bar bg-danger" role="progressbar" style="width: 55%" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">@layoutService.GetDatas().Result.FirstOrDefault(p=>p.Key.ToLower().Trim() == "photoshop").Value%</div>
                             </div>
                        
                           
@@ -90,16 +90,16 @@
         </section>
         <section id="search">
                 <div class="row">
-                    <div class="col-lg-6">
-                        <h4>Our Newsletter</h4>
-                        <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+                    <div class="col-lg-6 col-md-12 col-sm-12">
+                        <h4>@Model.News.Title</h4>
+                        <p>@Model.News.Subtitle</p>
                     </div>
-                    @*<div class="col-lg-6">
+                    <div class="col-lg-6 col-md-12 col-sm-12">
                         <form action="">
-                            <input type="" name="" id="">
+                            <input type="email" name="" id="">
                             <button class="btn btn-danger subs">Subscribe</button>
                         </form>
-                    </div>*@
+                    </div>
                 </div>
 
         </section>

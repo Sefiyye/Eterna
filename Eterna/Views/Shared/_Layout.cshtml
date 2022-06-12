@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -16,17 +17,17 @@
             <div class="row d-flex">
               <div class="email col-lg-2">
                 <i class="fa-solid fa-envelope"></i>
-                <span>contact@example.com</span>
+                <span>@layoutservice.GetDatas().Result.FirstOrDefault(e=>e.Key.ToLower().Trim() == "email").Value</span>
               </div>
               <div class="phone col-lg-2">
                 <i class="fa-solid fa-mobile-screen-button"></i>
-                <span>+1 5589 5548 55</span>
+                <span>@layoutservice.GetDatas().Result.FirstOrDefault(p=>p.Key.ToLower().Trim() == "phone").Value</span>
               </div>
               <div class="social-icons col-lg-8">
-                <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="@layoutService.GetDatas().Result.FirstOrDefault(e=>e.Key.ToLower().Trim() == "twitter").IconUrl"><i class="@layoutService.GetDatas().Result.FirstOrDefault(e=>e.Key.ToLower().Trim() =="twitter").Value"></i></a>
+                <a href="@layoutService.GetDatas().Result.FirstOrDefault(e=>e.Key.ToLower().Trim() =="facebook").IconUrl"><i class="@layoutService.GetDatas().Result.FirstOrDefault(e=>e.Key.ToLower().Trim() =="facebook").Value"></i></a>
+                <a href="@layoutService.GetDatas().Result.FirstOrDefault(e=>e.Key.ToLower().Trim() =="instagram").IconUrl"><i class="@layoutService.GetDatas().Result.FirstOrDefault(e=>e.Key.ToLower().Trim() =="instagram").Value"></i></a>
+                <a href="@layoutService.GetDatas().Result.FirstOrDefault(e=>e.Key.ToLower().Trim() =="linkedin").IconUrl"><i class="@layoutService.GetDatas().Result.FirstOrDefault(e=>e.Key.ToLower().Trim() =="linkedin").Value"></i></a>
               </div>
             </div>
           </div>
@@ -35,7 +36,7 @@
           <div class="container mt-3">
             <div class="row">
               <div class="logo col-lg-2">
-                  <div class="box"> <h2>ETERNA</h2></div>
+                  <div class="box"> <h2>@layoutService.GetDatas().Result.HeaderLogo</h2></div>
                
               </div>
               <div class="nav-links col-lg-10">
@@ -109,17 +110,18 @@
                       <span>A108 Adam Street</span><br>
                       <span>New York, NY 535022</span><br>
                       <span>United States</span><br>
-                      <span><b>Phone:</b><span>+1 5589 55488 55</span></span><br>
+                      <span><b>Phone:</b><span>@layoutservice.GetDatas().Result.FirstOrDefault(p=>p.Key.ToLower().Trim() == "phone").Value</span></span><br>
+                      <span><b>Email:</b><span>@layoutservice.GetDatas().Result.FirstOrDefault(e=>e.Key.ToLower().Trim() == "email").Value</span></span><br>
                   </div>
                   <div class="col-lg-3">
                       <h4>About Eterna</h4>
                       <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus.</p>
                       <div class="icons">
-                        <a href="#" class="twitter"><i class="fa-brands fa-twitter"></i></a>
-                        <a href="#" class="facebook"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="#" class="instagram"><i class="fa-brands fa-instagram"></i></a>
-                      <a href="#" class="skype"><i class="fa-brands fa-skype"></i></a>
-                        <a href="#" class="in"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="@layoutservice.GetDatas().Result.FirstOrDefault(e=>e.Key.ToLower().Trim() == "twitter").IconURL"><i class="@layoutservice.GetDatas().Result.FirstOrDefault(e=>e.Key.ToLower().Trim() == "facebook").Value"></i></a>
+                        <a href="@layoutservice.GetDatas().Result.FirstOrDefault(e=>e.Key.ToLower().Trim() == "facebook").IconURL"><i class="@layoutservice.GetDatas().Result.FirstOrDefault(e=>e.Key.ToLower().Trim() == "facebook").Value"></i></a>
+                       <a href="@layoutservice.GetDatas().Result.FirstOrDefault(e=>e.Key.ToLower().Trim() == "instagram").IconURL"><i class="@layoutservice.GetDatas().Result.FirstOrDefault(e=>e.Key.ToLower().Trim() == "facebook").Value"></i></a>
+                       <a href="@layoutservice.GetDatas().Result.FirstOrDefault(e=>e.Key.ToLower().Trim() == "skype").IconURL"><i class="@layoutservice.GetDatas().Result.FirstOrDefault(e=>e.Key.ToLower().Trim() == "facebook").Value"></i></a>
+                        <a href="@layoutservice.GetDatas().Result.FirstOrDefault(e=>e.Key.ToLower().Trim() == "linkedin").IconURL"><i class="@layoutservice.GetDatas().Result.FirstOrDefault(e=>e.Key.ToLower().Trim() == "facebook").Value"></i></a>
                       </div>
                   </div>
               </div>
@@ -127,7 +129,7 @@
           <section id="footer">
             <div class="footer-top">
                 <i class="fa-solid fa-c "></i>
-                <p>Copyright <strong>Eterna</strong>. All Rights Reserved</p>
+                <p>© Copyright <strong>Eterna</strong>. All Rights Reserved</p>
                 <p>Designed by <a href="https://bootstrapmade.com">BootstrapMade</a></p>
               </div>
           </section>
