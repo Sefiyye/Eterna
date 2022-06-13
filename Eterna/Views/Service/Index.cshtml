@@ -40,7 +40,7 @@
               <div class="info">
                   <div class="row">               
                       <div class="img col-lg-6 col-md-12 col-sm-12">
-                          <img src="@Model.Statistics.Image" alt="">
+                          <img src="~/assets/img/@Model.Statistics.Image" alt="">
                       </div>
                       <div class="skill col-lg-6">
                           <div class="title">
@@ -55,7 +55,7 @@
                               <span><b>100%</b></span>
                               </div>
                             <div class="progress">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">@layoutService.GetDatas().Result.FirstOrDefault(p=>p.Key.ToLower().Trim() == "html").Value%</div>
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">@layoutService.GetDatas().Result.FirstOrDefault(p=>p.Key.ToLower().Trim() == "html")?.Value</div>
                               </div>
                           
                             <div class="values d-flex justify-content-between">
@@ -63,7 +63,7 @@
                             <span><b>55%</b></span>
                         </div>
                           <div class="progress">
-                              <div class="progress-bar bg-danger" role="progressbar" style="width: 55%" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">@layoutService.GetDatas().Result.FirstOrDefault(p=>p.Key.ToLower().Trim() == "css").Value%</div>
+                              <div class="progress-bar bg-danger" role="progressbar" style="width: 55%" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">@layoutService.GetDatas().Result.FirstOrDefault(p=>p.Key.ToLower().Trim() == "css")?.Value</div>
                             </div>
                       
                             <div class="values d-flex justify-content-between">
@@ -71,7 +71,7 @@
                             <span><b>90%</b></span>
                         </div>
                           <div class="progress">
-                              <div class="progress-bar bg-danger" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">@layoutService.GetDatas().Result.FirstOrDefault(p=>p.Key.ToLower().Trim() == "javascript").Value%</div>
+                              <div class="progress-bar bg-danger" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">@layoutService.GetDatas().Result.FirstOrDefault(p=>p.Key.ToLower().Trim() == "javascript")?.Value</div>
                             </div>
                         
                         <div class="values d-flex justify-content-between">
@@ -79,7 +79,7 @@
                             <span><b>55%</b></span>
                         </div>
                           <div class="progress">
-                              <div class="progress-bar bg-danger" role="progressbar" style="width: 55%" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">@layoutService.GetDatas().Result.FirstOrDefault(p=>p.Key.ToLower().Trim() == "photoshop").Value%</div>
+                              <div class="progress-bar bg-danger" role="progressbar" style="width: 55%" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">@layoutService.GetDatas().Result.FirstOrDefault(p=>p.Key.ToLower().Trim() == "photoshop")?.Value</div>
                             </div>
                        
                           

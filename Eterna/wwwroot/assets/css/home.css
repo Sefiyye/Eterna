@@ -121,59 +121,6 @@ header nav .services .row span a {
   color: red;
 }
 
-main #service .cards .container .row .card {
-  width: 31%;
-  margin: 15px;
-  text-align: center;
-  height: 300px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-main #service .cards .container .row .card .title h2 a {
-  text-decoration: none;
-  color: #333232;
-}
-
-main #service .cards .container .row .card:hover {
-  background-color: #E96B56;
-  color: white;
-}
-
-main #service .cards .container .row .card .icons {
-  text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-main #service .cards .container .row .card .icons i {
-  background-color: #ff8800;
-  height: 60px;
-  width: 60px;
-  border-radius: 5px;
-  text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-shadow: -6px -5px 1px 1px #fbe2dd;
-          box-shadow: -6px -5px 1px 1px #fbe2dd;
-  color: #fff;
-  font-size: 25px;
-}
 
 main #skills .container .row {
   margin-top: 40px;
@@ -303,8 +250,8 @@ main #services .cards .container .row .card:hover {
 }
 
 main #services .cards .container .row .card .icons {
-  -webkit-box-pack: left;
-      -ms-flex-pack: left;
+/*  -webkit-box-pack: left;
+      -ms-flex-pack: left;*/
           justify-content: left;
 }
 
@@ -420,18 +367,18 @@ main #services .cards .container .row .card .icons i {
   position: relative;
 }
 
-#slider .carousel-inner .info {
+#slider .carousel-inner .carusel-caption {
   position: absolute;
   bottom: 30%;
 }
 
-#slider .carousel-inner .info button {
+#slider .carousel-inner .carusel-caption button {
   width: 15%;
   margin: 20px;
   background-color: #f31a1a;
 }
 
-#slider .carousel-inner .info button:hover {
+#slider .carousel-inner .carusel-caption button:hover {
   background-color: white;
   color: black;
   -webkit-transition: 0.5s;
@@ -444,10 +391,10 @@ main #services .cards .container .row .card .icons i {
   width: 100%;
 }
 
-#slider .carousel-inner h2 {
+#slider .carousel-inner h5 {
   color: black;
   font-weight: bold;
-  font-size: 60px;
+  font-size: 50px;
   margin: 15px;
 }
 

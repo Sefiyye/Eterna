@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
+﻿using Microsoft.AspNetCore.Http;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Eterna.Models
 {
@@ -6,7 +7,8 @@ namespace Eterna.Models
     {
         public int Id { get; set; }
         [NotMapped]
-        public string Photo { get; set; }
+        public IFormFile Photo { get; set; }
+        public string Image { get; set; }
         public string Title { get; set; }
         public string Subtitle { get; set; }
         public string Btn { get; set; }

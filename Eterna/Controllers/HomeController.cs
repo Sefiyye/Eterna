@@ -19,10 +19,11 @@ namespace Eterna.Controllers
             HomeVM model = new HomeVM
             {
                 Sliders = await _context.Sliders.ToListAsync(),
-                Clients = await _context.Clients.ToListAsync(),
+                Clients = await _context.Clients.FirstOrDefaultAsync(),
                 Rules = await _context.Rules.FirstOrDefaultAsync(),
                 HomeCards = await _context.HomeCards.ToListAsync(),
                 LastCards = await _context.LastCards.ToListAsync(),
+                ClientsImages = await _context.ClientsImages.ToListAsync(),
             };
             return View(model);
         }

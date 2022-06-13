@@ -20,12 +20,6 @@ namespace Eterna.Services
             List<Contact> contacts = await _context.Contacts.ToListAsync();
             return contacts;
         }
-        //public async Task<List<Statistics>> GetDataStatistcs()
-        //{
-        //    List<Statistics> statistcs = await _context.Statistics.ToListAsync();
-
-        //    return statistcs;
-
-        //}
+     
     }
 }
