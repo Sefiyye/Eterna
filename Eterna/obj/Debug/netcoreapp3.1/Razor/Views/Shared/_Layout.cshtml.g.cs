@@ -13,21 +13,21 @@ namespace AspNetCore
     using Microsoft.AspNetCore.Mvc.Rendering;
     using Microsoft.AspNetCore.Mvc.ViewFeatures;
 #nullable restore
-#line 2 "C:\Users\Ilhame\Desktop\Eterna\Eterna\Views\_ViewImports.cshtml"
+#line 1 "C:\Users\Ilhame\Desktop\Eterna\Eterna\Views\_ViewImports.cshtml"
 using Eterna.ViewModels;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 3 "C:\Users\Ilhame\Desktop\Eterna\Eterna\Views\_ViewImports.cshtml"
+#line 2 "C:\Users\Ilhame\Desktop\Eterna\Eterna\Views\_ViewImports.cshtml"
 using Eterna.Models;
 
 #line default
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"97b1c79e0d5567aa7edb52ecd63250cc096e6f8c", @"/Views/Shared/_Layout.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"a5654795a18177d9df3e42254bc417ca28c151d4", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"cf1997ceaf0330f164a6de6a0ccfaea10d148d82", @"/Views/_ViewImports.cshtml")]
     #nullable restore
     public class Views_Shared__Layout : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     #nullable disable

@@ -17,6 +17,11 @@ namespace Eterna.DAL
         public DbSet<Card> Cards { get; set; }
         public DbSet<Statistics> Statistics { get; set; }
         public DbSet<News> News { get; set; }
+        public DbSet<Client> Clients { get; set; }
+        public DbSet<Slider> Sliders { get; set; }
+        public DbSet<HomeCard> HomeCards { get; set; }
+        public DbSet<LastCard> LastCards { get; set; }
+        public DbSet<Rule> Rules { get; set; }
 
 
     }
