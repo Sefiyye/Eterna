@@ -151,3 +151,8 @@ C:\Users\Ilhame\Desktop\Eterna\Eterna\obj\Debug\netcoreapp3.1\Razor\Areas\Eterna
 C:\Users\Ilhame\Desktop\Eterna\Eterna\obj\Debug\netcoreapp3.1\Razor\Areas\EternaAdmin\Views\Slider\Edit.cshtml.g.cs
 C:\Users\Ilhame\Desktop\Eterna\Eterna\obj\Debug\netcoreapp3.1\Razor\Areas\EternaAdmin\Views\Slider\Delete.cshtml.g.cs
 C:\Users\Ilhame\Desktop\Eterna\Eterna\obj\Debug\netcoreapp3.1\Razor\Areas\EternaAdmin\Views\Slider\Index.cshtml.g.cs
+C:\Users\Ilhame\Desktop\Eterna\Eterna\obj\Debug\netcoreapp3.1\Razor\Areas\EternaAdmin\Views\Slider\Detail.cshtml.g.cs
+C:\Users\Ilhame\Desktop\Eterna\Eterna\obj\Debug\netcoreapp3.1\Razor\Areas\EternaAdmin\Views\LastCard\Index.cshtml.g.cs
+C:\Users\Ilhame\Desktop\Eterna\Eterna\obj\Debug\netcoreapp3.1\Razor\Areas\EternaAdmin\Views\LastCard\Detail.cshtml.g.cs
+C:\Users\Ilhame\Desktop\Eterna\Eterna\obj\Debug\netcoreapp3.1\Razor\Areas\EternaAdmin\Views\LastCard\Create.cshtml.g.cs
+C:\Users\Ilhame\Desktop\Eterna\Eterna\obj\Debug\netcoreapp3.1\Razor\Areas\EternaAdmin\Views\LastCard\Edit.cshtml.g.cs

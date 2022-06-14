@@ -1,0 +1,22 @@
+﻿@model LastCard
+<form method="post" class="form-control">
+    <div>
+        <label class="mb-3 ">Title</label>
+        <input class="form-control" asp-for="Title" /><br />
+        <span class="text-danger" asp-validation-for="Title"></span>
+    </div>
+    <div>
+        <label class="mb-3 ">Subtitle</label>
+        <input class="form-control" asp-for="Subtitle" /><br />
+        <span class="text-danger" asp-validation-for="Subtitle"></span>
+    </div>
+    <div>
+        <label class="mb-3 ">Icon</label>
+        <input class="form-control" asp-for="Icon" /><br />
+        <span class="text-danger" asp-validation-for="Icon"></span>
+    </div>
+    <div>
+        <button type="submit" class="btn btn-secondary">Edit LastCard</button>
+    </div>
+</form>
+

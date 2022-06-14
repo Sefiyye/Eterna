@@ -1,0 +1,27 @@
+﻿@model LastCard
+<div>
+    <div>
+        <label asp-for="Id">Id</label><br />
+        <p>@Model.Id</p>
+    </div>
+    <div>
+        <label asp-for="Title">Title</label><br />
+        <p>@Model.Title</p>
+    </div>
+    <div>
+        <label asp-for="Subtitle">Subtitle</label><br />
+        <p>@Model.Subtitle</p>
+    </div>
+     <div>
+        <label asp-for="Icon">Icon</label><br />
+        <p>@Model.Icon</p>
+    </div>
+   
+   
+    <div class="my-3">
+        <form method="post">
+            <button class="btn btn-lg btn-pinterest" asp-controller="lastCard" asp-action="index">Detail</button>
+        </form>
+    </div>
+</div>
+
