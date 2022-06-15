@@ -156,3 +156,5 @@ C:\Users\Ilhame\Desktop\Eterna\Eterna\obj\Debug\netcoreapp3.1\Razor\Areas\Eterna
 C:\Users\Ilhame\Desktop\Eterna\Eterna\obj\Debug\netcoreapp3.1\Razor\Areas\EternaAdmin\Views\LastCard\Detail.cshtml.g.cs
 C:\Users\Ilhame\Desktop\Eterna\Eterna\obj\Debug\netcoreapp3.1\Razor\Areas\EternaAdmin\Views\LastCard\Create.cshtml.g.cs
 C:\Users\Ilhame\Desktop\Eterna\Eterna\obj\Debug\netcoreapp3.1\Razor\Areas\EternaAdmin\Views\LastCard\Edit.cshtml.g.cs
+C:\Users\Ilhame\Desktop\Eterna\Eterna\obj\Debug\netcoreapp3.1\Razor\Areas\EternaAdmin\Views\LastCard\Delete.cshtml.g.cs
+C:\Users\Ilhame\Desktop\Eterna\Eterna\obj\Debug\netcoreapp3.1\Razor\Areas\EternaAdmin\Views\Dashboard\Index.cshtml.g.cs
